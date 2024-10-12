@@ -1,3 +1,7 @@
+1.Используя команду cat в терминале операционной системы Linux, 
+создать два файла Домашние животные (заполнив файл собаками, кошками, хомяками)
+и Вьючные животными заполнив файл Лошадьми, верблюдами и ослы), а затем объединить их.
+
 viitalij@viitalij-VirtualBox:~$ cat > pets.txt
 # животное имя возраст(в месяцах)
 собака снежок 12 
@@ -38,6 +42,14 @@ viitalij@viitalij-VirtualBox:~$ cat human_friends.txt
 хомяк остап 18
 # животное имя возраст(в месяцах)
 лошадь белка 16
-
-
 верблюд одик 25
+
+2.Создать директорию, переместить файл туда
+
+viitalij@viitalij-VirtualBox:~$ mkdir animal
+viitalij@viitalij-VirtualBox:~$ mv human_friends.txt animal/
+viitalij@viitalij-VirtualBox:~$ ls
+ 1.txt        animal    compose.yaml   pack_animals.txt   seminar   test         wget-log   Документы   Изображения   Общедоступные   Шаблоны
+ 1.txt27VP+   compose   log            pets.txt           snap      testfolder   Видео      Загрузки    Музыка       'Рабочий стол'
+
+3.Подключить дополнительный репозиторий MySQL. Установить любой пакет из этого репозитория.
