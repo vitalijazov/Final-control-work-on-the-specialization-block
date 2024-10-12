@@ -1,6 +1,3 @@
-1.Используя команду cat в терминале операционной системы Linux, 
-создать два файла Домашние животные (заполнив файл собаками, кошками, хомяками)
-и Вьючные животными заполнив файл Лошадьми, верблюдами и ослы), а затем объединить их.
 
 viitalij@viitalij-VirtualBox:~$ cat > pets.txt
 # животное имя возраст(в месяцах)
@@ -44,15 +41,12 @@ viitalij@viitalij-VirtualBox:~$ cat human_friends.txt
 лошадь белка 16
 верблюд одик 25
 
-2.Создать директорию, переместить файл туда
-
 viitalij@viitalij-VirtualBox:~$ mkdir animal
 viitalij@viitalij-VirtualBox:~$ mv human_friends.txt animal/
 viitalij@viitalij-VirtualBox:~$ ls
  1.txt        animal    compose.yaml   pack_animals.txt   seminar   test         wget-log   Документы   Изображения   Общедоступные   Шаблоны
  1.txt27VP+   compose   log            pets.txt           snap      testfolder   Видео      Загрузки    Музыка       'Рабочий стол'
 
-3.Подключить дополнительный репозиторий MySQL. Установить любой пакет из этого репозитория.
 
 viitalij@viitalij-VirtualBox:~$ sudo dpkg -i mysql-apt-config_0.8.24-1_all.deb
 [sudo] пароль для viitalij: 
@@ -299,7 +293,7 @@ viitalij@viitalij-VirtualBox:~$ systemctl status mysql.service
 окт 12 14:25:36 viitalij-VirtualBox systemd[1]: Starting mysql.service - MySQL Community Server...
 окт 12 14:25:37 viitalij-VirtualBox systemd[1]: Started mysql.service - MySQL Community Server.
 
-4.Установить и удалить deb-пакет с помощью dpkg.
+
 
 viitalij@viitalij-VirtualBox:~$  sudo dpkg -i mysql-apt-config_0.8.24-1_all.deb
 dpkg: ошибка: нет доступа к архиву «mysql-apt-config_0.8.24-1_all.deb»: Нет такого файла или каталога
@@ -309,6 +303,12 @@ viitalij@viitalij-VirtualBox:~$ sudo dpkg -r mysql-apt-config
 dpkg: предупреждение: игнорируется запрос на удаление неустановленного пакета mysql-apt-config
 viitalij@viitalij-VirtualBox:~$ sudo dpkg --purge mysql-apt-config
 dpkg: предупреждение: игнорируется запрос на удаление неустановленного пакета mysql-apt-config
-viitalij@viitalij-VirtualBox:~$ 
+
+viitalij@viitalij-VirtualBox:~$ CREATE DATABASE IF NOT EXISTS HumanFriends;
+   USE HumanFriends;
+CREATE: команда не найдена
+USE: команда не найдена
+
+
 
 
