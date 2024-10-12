@@ -1,0 +1,43 @@
+viitalij@viitalij-VirtualBox:~$ cat > pets.txt
+# животное имя возраст(в месяцах)
+собака снежок 12 
+собака кот 1
+кошка мурка 6
+хомяк остап 18^Z
+[1]+  Остановлен    cat > pets.txt
+viitalij@viitalij-VirtualBox:~$ cat > pets.txt
+# животное имя возраст(в месяцах)
+собака снежок 12 
+собака кот 1
+кошка мурка 6
+хомяк остап 18
+^Z
+[2]+  Остановлен    cat > pets.txt
+viitalij@viitalij-VirtualBox:~$ cat > pack_animals.txt
+# животное имя возраст(в месяцах)
+лошадь белка 16
+верблюд одик 25
+осел упря 10^Z
+[3]+  Остановлен    cat > pack_animals.txt
+viitalij@viitalij-VirtualBox:~$ cat pets.txt pack_animals.txt > all_animals.txt
+viitalij@viitalij-VirtualBox:~$ cat all_animals.txt
+# животное имя возраст(в месяцах)
+собака снежок 12 
+собака кот 1
+кошка мурка 6
+хомяк остап 18
+# животное имя возраст(в месяцах)
+лошадь белка 16
+верблюд одик 25
+viitalij@viitalij-VirtualBox:~$ mv all_animals.txt human_friends.txt
+viitalij@viitalij-VirtualBox:~$ cat human_friends.txt
+# животное имя возраст(в месяцах)
+собака снежок 12 
+собака кот 1
+кошка мурка 6
+хомяк остап 18
+# животное имя возраст(в месяцах)
+лошадь белка 16
+
+
+верблюд одик 25
